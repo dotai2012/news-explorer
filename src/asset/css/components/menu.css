@@ -1,0 +1,14 @@
+.normal-menu {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1em !important;
+  margin-top: 4em !important;
+  transition: box-shadow 0.5s ease, padding 0.5s ease !important;
+}
+
+.fixed-menu {
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2) !important;
+}

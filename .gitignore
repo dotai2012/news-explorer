@@ -1,0 +1,13 @@
+/node_modules
+/build
+/public
+yarn.lock
+bundle.js
+npm-debug.log
+.DS_Store
+.env
+./src/config/dev.js
+
+# IntelliJ
+*.iml
+/.idea
