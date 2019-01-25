@@ -7,7 +7,7 @@ export default function RouteApp() {
   return (
     <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/" component={About} />
+          <Route path="/about" component={About} />
     </Switch>
   );
 }
