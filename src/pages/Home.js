@@ -44,7 +44,6 @@ class Home extends Component {
     return (
       <Grid>
         {this.renderArticles()}
-        {console.log(this.props.articles)}
       </Grid>
     );
   }
