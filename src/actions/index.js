@@ -6,7 +6,7 @@ import { apiKey } from '../config/key';
 
 const BASE_URL = 'https://newsapi.org/v2/everything';
 const currentTime = moment();
-const targetTime = currentTime.clone().subtract(29, 'days');
+const targetTime = currentTime.clone().subtract(27, 'days');
 
 export const fetchNews = q => (dispatch) => {
   const query = qs.stringify({

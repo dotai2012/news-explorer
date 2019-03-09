@@ -14,11 +14,11 @@ class Home extends Component {
           {this.props.articles.map((group, indexGroup) => {
             if (indexGroup === 0) {
               return (
-                <Grid.Row columns={2} key={indexGroup} className='grid-row'>
+                <Grid.Row key={indexGroup} className='grid-row'>
                   {group.map(({
                     url, urlToImage, title, publishedAt, description, author,
                   }, index) => (
-                      <Grid.Column key={index}>
+                      <Grid.Column mobile={16} computer={8} key={index}>
                         <CardLink url={url} imgSrc={urlToImage} title={title} date={publishedAt} description={description} author={author} />
                       </Grid.Column>
                   ))}
@@ -26,12 +26,12 @@ class Home extends Component {
               );
             }
             return (
-                <Grid.Row columns={3} key={indexGroup} className='grid-row'>
+                <Grid.Row key={indexGroup} className='grid-row'>
                   {group.map(({
                     url, urlToImage, title, publishedAt, description, author,
                   }, index) => (
-                      <Grid.Column key={index}>
-                      <CardLink url={url} imgSrc={urlToImage} title={title} date={publishedAt} description={description} author={author} />
+                      <Grid.Column mobile={16} computer={5} key={index}>
+                        <CardLink url={url} imgSrc={urlToImage} title={title} date={publishedAt} description={description} author={author} />
                       </Grid.Column>
                   ))}
                 </Grid.Row>
@@ -42,7 +42,7 @@ class Home extends Component {
 
   render() {
     return (
-      <Grid>
+      <Grid centered>
         {this.renderArticles()}
       </Grid>
     );
